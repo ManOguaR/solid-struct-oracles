@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "solid-struct": "^2.5.1"
+  },
+  "name": "solid-struct-oracles",
+  "description": "REMIX DEFAULT WORKSPACE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ManOguaR",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManOguaR/solid-struct-oracles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ManOguaR/solid-struct-oracles/issues"
+  },
+  "homepage": "https://github.com/ManOguaR/solid-struct-oracles#readme"
+}
