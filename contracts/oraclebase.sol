@@ -25,6 +25,8 @@ abstract contract OracleBase is AccessControl, IOracle, ISecureOracle {
         require(defaultPublisher != address(0), "OracleBase: defaultPublisher is the zero address.");
 
         _grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
+        _grantRole(SUBSCRIBER_ROLE, _msgSender());
+        _grantRole(PUBLISHER_ROLE, _msgSender());
         _grantRole(PUBLISHER_ROLE, defaultPublisher);
     }
 

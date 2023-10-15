@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "../priceTickerOracle.sol";
+import "./baseMATICTicker.sol";
 
-contract TickerMATICETH is PriceTickerOracle {
+contract TickerMATICETH is BaseMATICCurrencyTicker {
     constructor(address inPublisher)
-    PriceTickerOracle(inPublisher, "MATICETH") {
+    BaseMATICCurrencyTicker(inPublisher, "ETH") {
         
     }
 }

@@ -1,11 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "../priceTickerOracle.sol";
+import "./baseMATICTicker.sol";
 
-contract TickerMATICUSD is PriceTickerOracle {
+contract TickerMATICUSDT is BaseMATICTokenTicker {
+    address private constant TETHER_TOKEN = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
+    
     constructor(address inPublisher)
-    PriceTickerOracle(inPublisher, "MATICUSD") {
+    BaseMATICTokenTicker(inPublisher, TETHER_TOKEN) {
         
     }
 }
